@@ -1,0 +1,72 @@
+@model CobroApiP2.Models.Cobros
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Cobros</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Fecha)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Referencia)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Referencia)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdRemoto)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdRemoto)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdRuta)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdRuta)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Mora)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Mora)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Monto)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Monto)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Latitud)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Latitud)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Longitud)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Longitud)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EsNulo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EsNulo)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.IdCobro">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
